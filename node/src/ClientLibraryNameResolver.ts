@@ -24,8 +24,6 @@ function validateIdentificationValue(
 /**
  * Resolves the library name sent to the server from the raw client-identification
  * configuration values.
- *
- * @internal
  */
 export function resolveClientLibraryName(
     libName: string | undefined,

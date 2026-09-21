@@ -551,8 +551,6 @@ function applyMutualTls(
  * Applies the `tlsAdvancedConfiguration` block onto the connection request:
  * the `useTLS`-off guard, the `insecure` flag, `rootCertificates`, and the
  * mTLS dispatch.
- *
- * @internal
  */
 export function applyTlsAdvancedConfiguration(
     tls: NonNullable<
@@ -702,7 +700,6 @@ function convertGlideRecordForSortedSet(
 }
 
 /**
- * @internal
  * This function converts an input from GlideRecord or Record types to GlideRecord.
  *
  * @param keysAndValues - key names and their values.
@@ -721,7 +718,6 @@ export function convertGlideRecord(
 }
 
 /**
- * @internal
  * Recursively downcast `GlideRecord` to `Record`. Use if `data` keys are always strings.
  */
 export function convertGlideRecordToRecord<T>(
@@ -749,7 +745,6 @@ export function convertGlideRecordToRecord<T>(
 }
 
 /**
- * @internal
  * Check whether an object is a `GlideRecord` (see {@link GlideRecord}).
  */
 export function isGlideRecord(obj?: unknown): boolean {
@@ -785,7 +780,6 @@ export type StreamEntries =
     GlideString | number | (GlideString | number | GlideString[])[][];
 
 /**
- * @internal
  * Reverse of {@link convertGlideRecordToRecord}.
  */
 export function convertRecordToGlideRecord<T>(
